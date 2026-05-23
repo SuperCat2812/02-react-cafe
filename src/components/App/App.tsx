@@ -31,8 +31,8 @@ function App() {
     <div className={css.app}>
       <CafeInfo />
       <VoteOptions
-        handleVote={onVote}
-        resetVotes={onReset}
+        onVote={onVote}
+        onReset={onReset}
         canReset={totalVotes > 0}
       />
       {totalVotes > 0 ? (
