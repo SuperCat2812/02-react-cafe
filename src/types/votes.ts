@@ -4,4 +4,4 @@ export interface Votes {
   bad: number;
 }
 
-export let VoteType: "good" | "neutral" | "bad";
+export type VoteType = keyof Votes;

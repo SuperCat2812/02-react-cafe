@@ -1,7 +1,7 @@
 import type { VoteType } from "../../types/votes";
 import css from "./VoteOptions.module.css";
-interface OptionProps {
-  handleVote: (key: typeof VoteType) => void;
+interface OptionPropsProps {
+  handleVote: (vote: VoteType) => void;
   resetVotes: () => void;
   canReset: boolean;
 }
@@ -9,7 +9,7 @@ export default function VoteOptions({
   handleVote,
   resetVotes,
   canReset,
-}: OptionProps) {
+}: OptionPropsProps) {
   return (
     <div className={css.container}>
       <button
